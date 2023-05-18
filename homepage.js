@@ -31,7 +31,7 @@ arrowLeft.addEventListener("click", moveLeft);
 menuButton.addEventListener("click", toggleMobileMenu);
 
 //-------------------------reload website when document has been resized -------------------------//
-window.onresize = () => location.reload();
+// window.onresize = () => location.reload();
 
 //-------------------------display menu-------------------------//
 function toggleMobileMenu() {

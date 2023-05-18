@@ -1,0 +1,213 @@
+@media (min-width: 1024px) {
+    /*-------------------------desktop about me-------------------------*/
+    .about-me {
+        height: auto;
+        grid-template-areas: 
+        "title-specing-above title-specing-above title-specing-above title-specing-above"
+        "about-title about-title about-title about-title"
+        "title-specing-below title-specing-below title-specing-below title-specing-below"
+        "animation-specing-left about-animation animation-specing-right about-paragraph"
+        "animation-specing-below animation-specing-below animation-specing-below animation-specing-below";
+        grid-template-columns: 1fr auto 1fr 50%;
+        grid-template-rows: 3vw auto 5vw auto 5vw;
+    }
+    /*-------------------------desktop about me title-------------------------*/
+    .about-title {
+        height: 206px;
+        background-image: url("assets/desktop/background/desktop-about-background.svg");
+    }
+    /*-------------------------desktop about me paragraph-------------------------*/
+    .about-paragraph p {
+        width: 60%;
+        font-size: var(--medium-font);
+        line-height: 3.5rem;  
+    }
+    /*-------------------------desktop projects-------------------------*/
+    .projects {
+        grid-template-rows: 4vw auto 7vw auto 14vw;
+    }
+    /*-------------------------desktop projects title-------------------------*/
+    .projects-title {
+        height: 206px;
+        background-image: url("assets/desktop/background/desktop-projects-background.svg");
+    }
+    /*-------------------------desktop projects corousel-------------------------*/
+    .projects-carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    /*-------------------------desktop projects corousel arrows-------------------------*/
+    .projects-carousel .arrow {
+        display: block;
+        width: 46px;
+        height: 81px;
+        background-color: transparent;
+        border: 0;
+    }
+    .arrow-left {
+        opacity: 0;
+        background-image: url("assets/icons/left-arrow.svg");
+    }
+    .arrow-right {
+        background-image: url("assets/icons/right-arrow.svg");
+    }
+    .arrow:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    /*-------------------------desktop projects corousel arrows animation-------------------------*/
+    .projects-carousel .arrow-fade-out {
+        cursor: default;
+        animation: fadeOut 0.5s linear  1 forwards;
+    }
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        } 100% {
+            opacity: 0;
+        }
+        
+    }
+    .projects-carousel .arrow-fade-in {
+        animation: fadeIn 0.5s linear  1 forwards;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        } 100% {
+            opacity: 1;
+        }
+    }
+    /*-------------------------desktop projects corousel container-------------------------*/
+    .projects-window {
+        overflow: hidden;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 81vw;
+        padding-bottom: 4px;
+        transition: all 200ms ease-in-out;
+    }
+    .projects-container li {
+        border-bottom-width: 60px;
+    }
+    .projects-container img {
+        width: 24vw;
+    }
+    .projects-container li:nth-child(4),
+    .projects-container li:nth-child(5) {
+        display: block;
+    }
+    .projects-container a div {
+        position: absolute;
+        margin: 6px 0;
+    }
+    .projects-container li a div h3 {
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+    /*-------------------------desktop projects corousel button-------------------------*/
+    .projects-see-more {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-see-more div {
+        display: flex;
+        justify-content: flex-end;
+        width: 79vw;
+    }
+    .projects-see-more a {
+        padding: 16px 0;
+        font-size: var(--medium-font);
+    }
+    /*-------------------------desktop contact-------------------------*/
+    .contact {
+        grid-template-areas: 
+        "title-specing-above title-specing-above title-specing-above title-specing-above"
+        "contact-title contact-title contact-title contact-title"
+        "title-specing-below title-specing-below title-specing-below title-specing-below"
+        "contact-text animation-specing-left contact-animation animation-specing-right"
+        "animation-specing-below animation-specing-below animation-specing-below animation-specing-below";
+        grid-template-columns: 50% 1fr auto 1fr;
+        grid-template-rows: 3vw auto 5vw auto 5vw;
+      }
+    /*-------------------------desktop contact title-------------------------*/
+     .contact-title {
+        height: 206px;
+        background-image: url("assets/desktop/background/desktop-contact-background.svg");
+    }
+    /*-------------------------desktop contact text-------------------------*/
+    .contact-text h3 {
+        width: 60%;
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+    .contact-text p {
+        width: 60%;
+        font-size: var(--medium-font);
+        line-height: 3.5rem;
+    }
+    /*-------------------------desktop contact button-------------------------*/
+    .contact-text a {
+        width: 180px;
+        padding: 16px 0;
+        font-size: var(--medium-font);
+    }
+    /*-------------------------desktop contact shaking hands final animation background-------------------------*/
+.shaking-hands {
+    animation: holding-hands 1ms linear 2.56s 1 forwards,
+               shaking-hands 1s linear 2.96s infinite forwards;
+}
+/*-------------------------desktop contact shaking hands initial animation background-------------------------*/
+.right-hand {
+    animation: right-hand-motion 1s linear 1.5s 1 forwards,
+               hands-disappearance 1ms linear 2.56s 1 forwards;
+}
+
+.left-hand {
+    animation: left-hand-motion 1s linear 1.5s 1 forwards,
+               hands-disappearance 1ms linear 2.56s 1 forwards;
+}
+    /*-------------------------desktop footer-------------------------*/
+    footer {
+        align-items: center;
+        grid-template-areas: "miliverse-find-me empty-space miliverse-info footer-animation";
+        grid-template-columns: 2fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        height: 240px;
+    }
+    footer div:nth-child(1),
+    footer div:nth-child(2) {
+        margin-top: 0;
+    }
+    /*-------------------------desktop footer info-------------------------*/
+    footer div:nth-child(2) {
+        display: flex;
+        justify-items: end;
+        text-align: left;
+    }
+    footer div:nth-child(2) p {
+        line-height: 2.5rem;
+    }
+    footer figure {
+        margin: 0 20px 0 0;
+    }
+    footer div:nth-child(4) {
+        grid-area: empty-space;
+    }
+}
+@media (min-width: 1300px) {
+    /*-------------------------desktop projects container-------------------------*/
+    .projects-container {
+        width: 80vw;
+    }
+    /*-------------------------desktop projects button-------------------------*/
+    .projects-see-more div {
+        width: 78vw;
+    }
+}

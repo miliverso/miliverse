@@ -1,0 +1,408 @@
+:root {
+    --primary-color: #85b044;
+    --background-primary-color: #fafafa;
+    --background-secundary-color: #f1f3f4;
+    --font-color: #6c6c6c;
+    --hover-color: #e5e5e5;
+    --small-font: 1.8rem;
+    --medium-font: 2.2rem;
+    --large-font: 2.5rem;
+    --extra-large-font: 3rem;
+    --xxl-font: 3.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    position: relative;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h2 {
+    visibility: hidden;
+}
+.background-primary-color {
+    background-color: var(--background-primary-color);
+}
+.background-secundary-color {
+    background-color: var(--background-secundary-color);
+}
+body {
+    width: 100%;
+    height: auto;
+    font-size: var(--small-font);
+    color: #6c6c6c;
+}
+/*===========================background animation===========================*/
+.universe-animation {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: round;
+    background-size: contain;
+}
+.little-stars-animation {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    background-image: url("assets/mobile/animation/background-animation/mobile-xsm-stars1.svg"), url("assets/mobile/animation/background-animation/mobile-xsm-stars2.svg"), url("assets/mobile/animation/background-animation/mobile-sm-stars.svg"), url("assets/mobile/animation/background-animation/mobile-sm-stars-animated.svg");
+    overflow: hidden;
+    z-index: -1;
+}
+.stars-animation {
+    background-image: url("assets/mobile/animation/background-animation/mobile-medium-stars.svg"), url("assets/mobile/animation/background-animation/mobile-large-stars.svg");
+    animation: stars 90s linear infinite;
+}
+@keyframes stars {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*===========================home page===========================*/
+
+/*-------------------------mobile menu-------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    z-index: 3;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 19px;
+    background-color: var(--primary-color); 
+}
+/*-------------------------miliverse logo-------------------------*/
+.icon-miliverse {
+    display: block;
+    width: 50px;
+    height: 46px;
+    font-family: icon-font;
+    font-size: 50px;
+    transition: all 200ms ease-in-out;
+}
+.icon-miliverse:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+/*-------------------------mobile menu button-------------------------*/
+.menu-button {
+    background: none;
+    border: none;
+}
+.menu-button div span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 9px;
+}
+.menu-icon span {
+    background-color: white;
+}
+.menu-icon:hover span {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+.menu-icon span:nth-child(2) {
+    margin: 6px 0;
+}
+.menu-active-x span {
+    background-color: white;
+}
+.menu-active-x:hover span {
+    background-color: var(--hover-color);
+}
+.line-1 {
+    margin-bottom: 5px;
+    transform: translatey(4px) rotate(45deg);
+}
+.menu-active-x .line-2 {
+   display: none;
+}
+.line-3 {
+    margin-top: 5px;
+    transform: translatey(-4px) rotate(315deg);
+}
+/*-------------------------mobile menu list-------------------------*/
+.navbar-list {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: var(--medium-font);
+    background-color: #b0c66d;
+    z-index: 1;
+}
+.navbar-list-active {
+    display: block;
+}
+.navbar-list li {
+    padding: 20px 0;
+    transition: all 200ms ease-in-out;
+}
+.navbar-list .navbar-list-li:hover a {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.navbar-list li:not(:last-child) {
+    border-bottom: 1px solid var(--hover-color);
+}
+/*-------------------------mobile social media icons-------------------------*/
+.navbar-social-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.navbar-list .navbar-social-icons li {
+    padding: 0 15px;
+    border-bottom: none;
+}
+.navbar-social-icons li a {
+    transition: all 200ms ease-in-out;
+}
+.navbar-social-icons li a:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.icon-github {
+    font-size: 36px;
+}
+.icon-twitter,
+.icon-linkedin,
+.icon-facebook,
+.icon-instagram {
+    font-size: 28px;
+}
+.navbar-social-icons li a span {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+/*-------------------------main-------------------------*/
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-------------------------animation when mobile-tablet menu is opened-------------------------*/
+.brightness-active {
+    filter: brightness(0.6);
+}
+/*-------------------------mobile hero-------------------------*/
+.hero {
+    position: relative;
+    top: 60px;
+}
+/*-------------------------mobile hero image-------------------------*/
+.hero-illustration-background img {
+    position: relative;
+}
+/*-------------------------mobile hero bubble dialog-------------------------*/
+.hero div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+    animation: translatex 0.5s linear 0.5s 1 forwards;
+    transform: translateX(-700px);
+}
+.hero-text-background {
+    width: 100%;
+    height: auto;
+}
+.hero-text-background img{
+    position: relative;
+    width: 53%;
+    margin: 0 auto;
+} 
+/*-------------------------mobile hero bubble dialog text-------------------------*/
+.hero div h1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 55%;
+    height: 40%;
+    padding: 7%;
+    color: white;
+    font-size: 5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+@keyframes translatex {
+    0% {
+        transform: translateX(-700px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 280px) {
+    /*-------------------------mobile hero bubble dialog text-------------------------*/
+    .hero div h1 {
+        font-size: 5.8vw;
+        line-height: 5.8vw;
+        text-align: center;
+    }
+}
+
+@media (min-width: 433px) {
+     /*-------------------------tablet background animation-------------------------*/
+    .little-stars-animation {
+        background-image: url("assets/tablet/animation/tablet-xsm-stars1.svg"), url("assets/tablet/animation/tablet-xsm-stars2.svg"), url("assets/tablet/animation/tablet-xsm-stars3.svg");
+    }
+    .stars-animation {
+        background-image: url("assets/tablet/animation/tablet-sm-stars.svg"), url("assets/tablet/animation/tablet-sm-stars-animated.svg"), url("assets/tablet/animation/tablet-medium-stars.svg"), url("assets/tablet/animation/tablet-large-stars.svg");
+    }
+    /*-------------------------tablet menu list-------------------------*/
+    .navbar-list li {
+        padding: 25px 0;
+        font-size: var(--medium-font);
+    }
+    /*-------------------------tablet social media icons-------------------------*/
+    .icon-twitter,
+    .icon-linkedin,
+    .icon-facebook,
+    .icon-instagram {
+        font-size: 34px;
+    }
+   /*-------------------------tablet hero bubble dialog-------------------------*/
+    .hero div {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .hero-text-background img{
+        width: 40%;
+        margin: 0;
+    } 
+    /*-------------------------tablet hero bubble dialog text-------------------------*/
+    .hero div h1 {
+        justify-content: flex-start;
+        width: 40%;
+        padding: 3%;
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+@media (min-width: 1024px) {
+     /*-------------------------desktop background animation-------------------------*/
+    .little-stars-animation {
+        background-image: url("assets/desktop/animation/desktop-xsm-stars1.svg"), url("assets/desktop/animation/desktop-xsm-stars2.svg"), url("assets/desktop/animation/desktop-xsm-stars3.svg"), url("assets/desktop/animation/desktop-xsm-stars4.svg"), url("assets/desktop/animation/desktop-xsm-stars5.svg");
+    }
+    .stars-animation {
+        background-image: url("assets/desktop/animation/desktop-sm-stars.svg"), url("assets/desktop/animation/desktop-sm-stars-animated.svg"), url("assets/desktop/animation/desktop-medium-animation.svg"), url("assets/desktop/animation/desktop-large-animation.svg"); 
+    }
+ /*-------------------------destop menu-------------------------*/
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding: 0 30px 0 30px;
+        background-color: var(--primary-color);  
+    }
+    .navbar-list li {
+        font-size: var(--small-font);
+    }
+    .navbar-icons-container {
+        position: relative;
+        width: auto;
+    }
+    /*-------------------------mobile menu button disable-------------------------*/
+    .menu-icon {
+        display: none;
+    }
+    .menu-active-x {
+        display: none;
+    }
+    /*-------------------------desktop menu list-------------------------*/
+    nav ul {
+        display: flex;
+        align-items: center;  
+    }
+    .navbar-list {
+        display: flex;
+        gap: 36px;
+        position: relative;
+        top: 0;
+        width: auto;
+        background-color: transparent;
+    }
+    .navbar .navbar-list li {
+        border-bottom: none;
+    }
+    .navbar-list li:not(:last-child):hover {
+        color: var(--hover-color);
+        cursor: pointer;
+    }
+    /*-------------------------desktop social media icons-------------------------*/
+    .navbar-social-icons {
+        gap: 12px;
+    }
+    .navbar-social-icons li a:hover {
+        color: var(--hover-color);
+        cursor: pointer;
+    }
+  /*-------------------------desktop hero bubble dialog-------------------------*/
+    .hero-text-background {
+        height: 100%;
+    }
+    .hero-text-background img {
+        width: 35%;
+    } 
+     /*-------------------------desktop hero bubble dialog text-------------------------*/
+    .hero div h1 {
+        top: 2%;
+        width: 35%;
+        height: 55%;
+        padding: 9% 3%;
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+}

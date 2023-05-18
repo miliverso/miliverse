@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #85b044;
+    --small-font: 1.6rem;
+    --medium-font: 1.8rem;
+    --large-font: 2.2rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+button {
+    color: var(--primary-color);
+}
+/*-------------------------mobile body------------------------*/
+.logo-animation-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--small-font);
+}
+/*-------------------------mobile background animation-------------------------*/
+.universe-animation {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.little-stars-animation {
+    background-color: black;
+    background-image: url("assets/mobile/animation/background-animation/mobile-xsm-stars1.svg"), url("assets/mobile/animation/background-animation/mobile-xsm-stars2.svg"), url("assets/mobile/animation/background-animation/mobile-sm-stars.svg"), url("assets/mobile/animation/background-animation/mobile-sm-stars-animated.svg");
+}
+.stars-animation {
+    background-image: url("assets/mobile/animation/background-animation/mobile-medium-stars.svg"), url("assets/mobile/animation/background-animation/mobile-large-stars.svg");
+    animation: stars 90s linear infinite;
+}
+@keyframes stars {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*-------------------------mobile logo animation-------------------------*/
+.miliverse-logo-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.miliverse-logo-container a {
+    position: absolute;
+    bottom: 10%;
+}
+.miliverse-logo svg {
+    width: 100%;
+    height: 800px;
+}
+#path01 {
+    opacity: 0;
+    animation: opacity 0.3s linear 1s 1 forwards;
+}
+#path02 {
+    opacity: 0;
+    animation: opacity 0.3s linear 1.3s 1 forwards;
+}
+#path03 {
+    opacity: 0;
+    animation: opacity 0.3s linear 1.6s 1 forwards;
+}
+#path04 {
+    opacity: 0;
+    animation: opacity 0.3s linear 1.9s 1 forwards;
+}
+#path05 {
+    opacity: 0;
+    animation: opacity 0.3s linear 2.2s 1 forwards;
+}
+#path06 {
+    opacity: 0;
+    animation: opacity 0.3s linear 2.5s 1 forwards;
+}
+#path07 {
+    opacity: 0;
+    animation: opacity 0.3s linear 2.8s 1 forwards;
+}
+#path08 {
+    opacity: 0;
+    animation: opacity 0.3s linear 3.1s 1 forwards;
+}
+#path09 {
+    opacity: 0;
+    animation: opacity 0.3s linear 3.4s 1 forwards;
+}
+#path10 {
+    opacity: 0;
+    animation: opacity 0.3s linear 3.7s 1 forwards;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+        transition: all 3s ease-in-out;
+    } 
+}
+/*-------------------------mobile logo animation-------------------------*/
+.logo-animation-button {
+    display: none;
+    width: 110px;
+    height: 50px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 0.8px solid var(--primary-color);
+    background: none;
+    cursor: pointer;
+    animation: opacity 1s linear 1 forwards;
+}
+.logo-animation-button:hover {
+    background-color: #85b04450;
+}
+@media (min-width: 433px) {
+    /*-------------------------tablet background animation-------------------------*/
+    .little-stars-animation {
+        background-image: url("assets/tablet/animation/tablet-xsm-stars1.svg"), url("assets/tablet/animation/tablet-xsm-stars2.svg"), url("assets/tablet/animation/tablet-xsm-stars3.svg");
+    }
+    .stars-animation {
+        background-image: url("assets/tablet/animation/tablet-sm-stars.svg"), url("assets/tablet/animation/tablet-sm-stars-animated.svg"), url("assets/tablet/animation/tablet-medium-stars.svg"), url("assets/tablet/animation/tablet-large-stars.svg");
+    }
+    /*-------------------------tablet logo animation-------------------------*/
+    .miliverse-logo-background {
+        background-image: url("assets/tablet/animation/tablet-sm-stars-in-the-middle.svg"), url("assets/tablet/animation/tablet-large-stars-in-the-middle.svg");
+    }
+    
+}
+@media (min-width: 1024px) {
+    /*-------------------------desktop background animation-------------------------*/
+    .little-stars-animation {
+        background-image: url("assets/desktop/animation/desktop-xsm-stars1.svg"), url("assets/desktop/animation/desktop-xsm-stars2.svg"), url("assets/desktop/animation/desktop-xsm-stars3.svg"), url("assets/desktop/animation/desktop-xsm-stars4.svg"), url("assets/desktop/animation/desktop-xsm-stars5.svg");
+    }
+    .stars-animation {
+        background-image: url("assets/desktop/animation/desktop-sm-stars.svg"), url("assets/desktop/animation/desktop-sm-stars-animated.svg"), url("assets/desktop/animation/desktop-medium-animation.svg"), url("assets/desktop/animation/desktop-large-animation.svg"); 
+    }
+     /*-------------------------desktop logo animation-------------------------*/
+    .miliverse-logo-background {
+        background-image:  url("assets/desktop/animation/desktop-small-stars-in-the-middle.svg"), url("assets/desktop/animation/desktop-large-stars-in-the-middle.svg");
+    }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="600"
+   viewBox="0 0 158.75 158.75"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="mobile-make-it-happen-background.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="mobile-shaking-hands-background.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.50464469"
+     inkscape:cx="169.42614"
+     inkscape:cy="445.85825"
+     inkscape:window-width="1440"
+     inkscape:window-height="756"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1167"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1001"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1264"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect2846"
+       style="fill:#fafafa;stroke:#000000;stroke-width:0.2;stroke-linecap:square;stroke-opacity:0"
+       d="M -16.253271,-12.583211 V 174.06638 H 178.78495 V -12.583211 Z M 64.767106,8.3777832 c 3.876945,0.012937 7.797896,0.9306252 11.53728,2.0655068 5.439105,1.650738 10.806362,3.773685 16.467212,4.287077 5.261775,0.4772 10.534532,-0.45957 15.804202,-0.839742 5.26968,-0.380173 10.82124,-0.138871 15.42542,2.452563 4.49718,2.531213 7.56482,7.021784 9.77511,11.685075 2.2103,4.663292 3.72615,9.637784 6.05389,14.243575 2.09448,4.144243 4.82067,7.9391 7.01508,12.031307 2.19441,4.092208 3.87473,8.634668 3.60908,13.270508 -0.24125,4.209939 -2.05995,8.155983 -4.01784,11.890747 -1.95789,3.734765 -4.11029,7.437335 -5.11545,11.53263 -1.2662,5.158835 -0.6261,10.56187 -0.40721,15.86932 0.10944,2.65371 0.11021,5.324 -0.28836,7.9499 -0.39856,2.62589 -1.20973,5.21691 -2.63033,7.46104 -1.61276,2.54769 -3.96848,4.57461 -6.59184,6.06113 -2.62335,1.48653 -5.51297,2.45397 -8.446,3.1533 -5.86607,1.39865 -11.96798,1.7585 -17.73018,3.53725 -5.280849,1.63016 -10.122046,4.40371 -15.166517,6.66161 -5.044471,2.25788 -10.51827,4.03218 -16.016077,3.46748 -6.15656,-0.63235 -11.631695,-4.11162 -16.552478,-7.86515 -4.920783,-3.75353 -9.643996,-7.93406 -15.33033,-10.37714 -4.891977,-2.1018 -10.252597,-2.80835 -15.370638,-4.27623 -2.559021,-0.73394 -5.078092,-1.66788 -7.366476,-3.02824 -2.288383,-1.36034 -4.346218,-3.16517 -5.769157,-5.41517 -1.515508,-2.39638 -2.263637,-5.22346 -2.457214,-8.05222 -0.193577,-2.82877 0.146571,-5.67027 0.678511,-8.455299 1.063881,-5.570069 2.902829,-11.065118 2.830319,-16.735413 -0.06542,-5.11612 -1.684436,-10.06321 -2.821534,-15.051794 -1.137097,-4.988583 -1.773886,-10.344231 0.05943,-15.121041 1.698042,-4.424348 5.326289,-7.830365 9.190654,-10.573515 3.864365,-2.74315 8.081929,-4.994939 11.727966,-8.022249 4.597596,-3.817389 8.128039,-8.732757 12.126392,-13.173873 3.998353,-4.441117 8.742832,-8.569596 14.538647,-10.025228 1.722773,-0.4326782 3.476192,-0.613595 5.23844,-0.6077148 z" />
+  </g>
+</svg>

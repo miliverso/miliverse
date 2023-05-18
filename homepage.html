@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Front End Developer with passion for transforming ideas into amazing websites">
+    <title>About Milagro Garcia</title>
+    <link rel="icon" href="assets/logos/miliverse-favicon.svg" type="images/svg">
+    <link rel="stylesheet" href="assets/icon-fonts/styles.css">
+    <link rel="stylesheet" href="preload-homepage.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="homepage-tablet.css" media="screen and (min-width: 432px)"/>
+    <link rel="stylesheet" href="homepage-desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="navbar-icons-container">
+                <div>
+                    <a href="homepage.html" aria-label="miliverse">
+                        <span class="icon-miliverse"></span>
+                    </a>   
+                </div> 
+                <button class="menu-button">
+                    <div id="menu-icon" class="menu-icon">
+                        <span id="line-1"></span>
+                        <span id="line-2"></span>
+                        <span id="line-3"></span>
+                    </div>
+                </button>
+ 
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-list-li"><a href="#about">about</a></li>
+                <li class="navbar-list-li"><a href="#projects">projects</a></li>
+                <li class="navbar-list-li"><a href="#contact">contact</a></li>
+                <li class="navbar-list-li">resume</li>
+                <li>
+                    <ul class="navbar-social-icons">
+                        <li><a href="https://github.com/miliverso" target="_blank"><span class="icon-github"></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/miliverse" target="_blank"><span class="icon-linkedin"></span></a></li>
+                        <li><a href="https://twitter.com/miliversedev" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li><a href="https://www.facebook.com/miliverse" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li><a href="https://www.instagram.com/miliverse.dev" target="_blank"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture class="hero-illustration-background">
+                <source media="(min-width: 1024px)" srcset="assets/desktop/images/hero.svg" />
+                <source media="(min-width: 433px)" srcset="assets/tablet/images/hero-tablet.svg" />
+                <img src="assets/mobile/images/hero-mobile.svg" alt="Milagro Garcia's illustration" />
+            </picture>
+            <div>
+                <picture class="hero-text-background">
+                    <source media="(min-width:433px)" srcset="assets/desktop/images/dialog.svg"/>
+                    <img src="assets/mobile/images/dialog3.svg" alt="">
+                </picture>
+                <h1>Hi, I am Milagro Garcia, front-end developer base in South America.</h1>
+            </div>
+        </section>
+
+        <section id="about" class="about-me sections-container">
+            <div class="about-title-space-above background-primary-color"></div>
+            <div class="about-title background"><h2>about</h2></div>
+            <div class="about-title-space-below background-primary-color"></div>
+            
+            <div class="about-paragraph background-primary-color">
+                <p>I love turning ideas into amazing websites. I'm passionate about creating high performance solutions that are accessible for everyone.</p>
+            </div>
+            
+            <div class="about-animation-space-above background-primary-color"></div>
+            <div class="about-animation-space-left background-primary-color"></div>
+            <div class="about-animation">
+                <img src="assets/mobile/background/mobile-make-it-happen-background.svg" alt="about animation's background">
+                <div class="make-it-happen"></div>
+            </div>
+            <div class="about-animation-space-right background-primary-color"></div>
+            <div class="about-animation-space-below background-primary-color"></div>
+        </section>
+
+        <section id="projects" class="projects sections-container">
+            <div class="projects-title-space-above background-secundary-color"></div>
+            <div class="projects-title background"><h2>projects</h2></div>
+            <div class="projects-title-space-below background-secundary-color"></div>
+            <div class="projects-carousel background-secundary-color">
+                <button id="arrow-left" class="arrow arrow-left background" arial-label="backward button"></button>
+                <div class="projects-window">
+                    <ul class="projects-container">
+                        <li>
+                            <a href="https://miliverseweathertoday.netlify.app/" target="_blank">
+                                <picture>
+                                    <source media="(min-width: 433px)" srcset="assets/tablet/images/tablet-weather-today-website.webp" />
+                                    <img src="assets/mobile/images/weather-today-website.webp" alt="weather today project">
+                                </picture>
+                                <div>
+                                    <h3>Weather Today Website</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <picture>
+                                    <source media="(min-width: 433px)" srcset="assets/tablet/images/tablet-miliverse-portfolio.webp" />
+                                    <img src="assets/mobile/images/miliverse-portfolio.webp" alt="miliverse protfolio project">
+                                </picture>
+                                <div>
+                                    <h3>Miliverse's Portfolio</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ornate-mousse-976312.netlify.app/" target="_blank">
+                                <picture>
+                                    <source media="(min-width: 433px)" srcset="assets/tablet/images/tablet-simon-bolivar-website.webp" />
+                                    <img src="assets/mobile/images/simon-bolivar-website.webp" alt="creative elefant protfolio project">
+                                </picture>
+                                <div>
+                                    <h3>Simon Bolivar Website</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://miliverseweathertoday.netlify.app/" target="_blank">
+                                <picture>
+                                    <source media="(min-width: 433px)" srcset="assets/tablet/images/tablet-weather-today-website.webp" />
+                                    <img src="assets/mobile/images/weather-today-website.webp" alt="weather today project">
+                                </picture>
+                                <div>
+                                    <h3>Weather Today Website</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <picture>
+                                    <source media="(min-width: 433px)" srcset="assets/tablet/images/tablet-weather-today-website.webp" />
+                                    <img src="assets/mobile/images/weather-today-website.webp" alt="weather today project">
+                                </picture>
+                                <div>
+                                    <h3>Weather Today Website</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="arrow-right" class="arrow arrow-right background" arial-label="forward button"></button>
+            </div>
+            <div class="projects-see-more background-secundary-color">
+                <!-- <div><a href="">See More!</a></div> -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact sections-container">
+            <div class="contact-title-space-above background-primary-color"></div>
+            <div class="contact-title background"><h2>contact</h2></div>
+            <div class="contact-title-space-below background-primary-color"></div>
+            
+            <div class="contact-text background-primary-color">
+                <h3>Let's create something great together!</h3>
+                <p>Have an idea? Feel free to hit the button and let me know about it. I would love to help you out!</p>
+                <a href="mailto:miliverse@hotmail.com">Send an Email</a>
+            </div>
+            
+            <div class="contact-animation-space-above background-primary-color"></div>
+            <div class="contact-animation-space-left background-primary-color"></div>
+            <div class="contact-animation">
+                <img src="assets/mobile/background/mobile-shaking-hands-background.svg" alt="contact animation's background">
+                <div class="shaking-hands-container background">
+                    <div id="shaking-hands" class="background"></div>
+                    <div id="right-hand" class="background"></div>
+                    <div id="left-hand" class="background"></div>
+                    
+                </div>
+            </div>
+            <div class="contact-animation-space-right background-primary-color"></div>
+            <div class="contact-animation-space-below background-primary-color"></div>
+        </section>
+        <div class="little-stars-animation universe-animation">
+            <div class="stars-animation universe-animation">
+            </div>
+        </div>
+    </main>
+    <footer class="background-secundary-color">
+        <div>
+            <p>Find me</p>
+            <ul class="footer-social-icons">
+                <li><a href="https://github.com/miliverso" target="_blank"><span class="icon-github"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/miliverse" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li><a href="https://twitter.com/miliversedev" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.facebook.com/miliverse" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/miliverse.dev" target="_blank"><span class="icon-instagram"></span></a></li>
+            </ul>
+            <p>© 2023 Miliverse</p>
+        </div>
+        <div>
+            <p>You've hit the end of the universe.<br/>
+                Wanna dig deeper?<br/><br/>
+                <a href="mailto:miliverse@hotmail.com">→ miliverse@hotmail.com</a><br/><br/>
+                Designed & Built with ♥ by Milagro Garcia
+            </p>
+        </div> 
+        <figure>
+            <img src="assets/mobile/images/big-rip.svg" alt="big rip's animation">
+        </figure>
+        <div></div>
+    </footer>
+    <script src="homepage.js"></script>
+</body>
+</html>

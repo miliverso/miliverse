@@ -1,0 +1,558 @@
+/*-------------------------mobile about me-------------------------*/
+.sections-container {
+    position: relative;
+    top: 60px;
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+.about-me {
+    grid-template-areas: 
+        "title-specing-above"
+        "about-title"
+        "title-specing-below"
+        "about-paragraph"
+        "animation-specing-above"
+        "about-animation"
+        "animation-specing-below";
+    grid-template-rows: 9vw auto 12vw auto 12vw auto 15vw;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/*-------------------------mobile about me tilte-------------------------*/
+.about-title-space-above {
+    grid-area: title-specing-above;
+}
+.about-title {
+    grid-area: about-title;
+    height: 63px;
+    background-image: url("assets/mobile/background/mobile-about-background.svg");
+}
+.about-title-space-below {
+    grid-area: title-specing-below;
+}
+/*-------------------------mobile about me paragraph-------------------------*/
+.about-paragraph {
+    display: grid;
+    grid-area: about-paragraph;
+    justify-items: center;
+    align-content: center;
+}
+.about-paragraph p {
+    width: 80%;
+    text-align: left;
+    font-size: var(--medium-font);
+    line-height: 3rem;
+    opacity: 0;
+}
+.text-animation {
+    animation: text-animation 0.5s linear 1 forwards;
+    transition: 200ms;
+}
+@keyframes text-animation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*-------------------------mobile about me animation-------------------------*/
+.about-animation-space-above {
+    grid-area: animation-specing-above;
+}
+/*-------------------------mobile about me animation container-------------------------*/
+.about-animation {
+    position: relative; 
+    display: block;
+    grid-area: about-animation;
+}
+/*-------------------------mobile about me animation image-------------------------*/
+.about-animation img {
+    max-width: 432px;
+}
+/*-------------------------mobile about me animation SVG-------------------------*/
+.about-animation div {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.about-animation div svg {
+    width: 90%;
+    height: 90%;
+    animation: scale-animation 90s linear infinite forwards;
+}
+@keyframes scale-animation {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+/*-------------------------mobile about me make it happen animation-------------------------*/
+path {
+    animation: make-it-happen 0.5s linear 1  forwards;
+    opacity: 0;
+}
+#path1 {
+    animation-delay: 0.025s;
+}
+#path2 {
+    animation-delay: 0.25s;
+}
+#path3 {
+    animation-delay: 0.375s;
+}
+#path4 {
+    animation-delay: 0.5s;
+}
+#path5 {
+    animation-delay: 0.625s;
+}
+#path6 {
+    animation-delay: 0.75s;
+}
+#path7 {
+    animation-delay: 0.875s;
+}
+#path8 {
+    animation-delay: 1s;
+}
+#path9 {
+    animation-delay: 1.115s;
+}
+#path10 {
+    animation-delay: 1.15s;
+}
+#path11 {
+    animation-delay: 1.375s;
+}
+#path12 {
+    animation-delay: 1.5s;
+}
+#path13 {
+    animation-delay: 1.615s;
+}
+#path14 {
+    animation-delay: 1.75s;
+}
+#path15 {
+    animation-delay: 1.875s;
+}
+#path16 {
+    animation-delay: 2s;
+}
+#path17 {
+    animation-delay: 2.125s;
+}
+#path18 {
+    animation-delay: 2.25s;
+}
+#path19 {
+    animation-delay: 2.275s;
+}
+#path20 {
+    animation-delay: 2.5s;
+}
+#path21 {
+    animation-delay: 2.625s;
+}
+#path22 {
+    animation-delay: 2.75s;
+}
+#path23 {
+    animation-delay: 2.875s;
+}
+#path24 {
+    animation-delay: 3s;
+}
+#path25 {
+    animation-delay: 3.125s;
+}
+#path26 {
+    animation-delay: 3.25s;
+}
+#path27 {
+    animation-delay: 3.375s;
+}
+#path28 {
+    animation-delay: 3.5s;
+}
+#path29 {
+    animation-delay: 3.625s;
+}
+#path30 {
+    animation-delay: 3.75s;
+}
+#path31 {
+    animation-delay: 3.875s;
+}
+#path32 {
+    animation-delay: 4s;
+}
+#path33 {
+    animation-delay: 4.124s;
+}
+#path34 {
+    animation-delay: 4.24s;
+}
+#path35 {
+    animation-delay: 4.374s;
+}
+#path36 {
+    animation-delay: 4.4s;
+}
+#path37 {
+    animation-delay: 4.625s;
+}
+@keyframes make-it-happen {
+    0% {
+        stroke-dasharray: 100 3000;
+        stroke-dashoffset: 100;
+        opacity: 1;
+    }   
+    100% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+.about-animation-space-below {
+    grid-area: animation-specing-below;
+}
+/*-------------------------mobile projects-------------------------*/
+.projects {
+    grid-template-rows: 9vw auto 15vw auto 35vw;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5);
+    border-bottom: #dddddd solid 1px;
+}
+/*-------------------------mobile projects title-------------------------*/
+.projects-title {
+    height: 63px;
+    background-image: url("assets/mobile/background/mobile-projects-background.svg");
+}
+/*-------------------------mobile projects carousel-------------------------*/
+.projects-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-carousel .arrow,
+.projects-container li:nth-child(4),
+.projects-container li:nth-child(5) {
+    display: none;
+}
+.projects-container {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.projects-container li {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border: 10px solid white;
+    border-bottom-width: 55px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.projects-container li:hover {
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.projects-container li:hover h3::after {
+    content: " →";
+    font-size: var(--medium-font);
+}
+.projects-container img {
+    width: 80vw;
+}
+.projects-container li a div {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    padding: 16px 0;
+}
+.projects-container li a div h3 {
+    font-family: 'Island Moments', cursive;;
+    font-weight: 300;
+    font-size: var(--extra-large-font);
+    line-height: 2.5rem;
+    text-align: center;
+}
+/*-------------------------mobile projects button-------------------------*/
+.projects-see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-see-more a{
+    display: block;
+    width: 140px;
+    height: 60px;
+    padding: 18px 0;
+    color: var(--primary-color);
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+ /*-------------------------mobile contact-------------------------*/
+ .contact {
+    grid-template-areas: 
+    "title-specing-above"
+    "contact-title"
+    "title-specing-below"
+    "contact-text"
+    "animation-specing-above"
+    "contact-animation"
+    "animation-specing-below";
+    grid-template-rows: 9vw auto 12vw auto 15vw auto 15vw;
+ }
+ .contact-title-space-above {
+    grid-area: title-specing-above;
+}
+/*-------------------------mobile contact tilte-------------------------*/
+.contact-title {
+    grid-area: contact-title;
+    width: 100%;
+    height: 63px;
+    background-image: url("assets/mobile/background/mobile-contact-background.svg");
+}
+.contact-title-space-below {
+    grid-area: title-specing-below;
+}
+/*-------------------------mobile contact text-------------------------*/
+.contact-text {
+    grid-area: contact-text;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+/*-------------------------mobile contact text subtitle-------------------------*/
+.contact-text h3 {
+    width: 80%;
+    margin-bottom: 40px;
+    font-size: var(--large-font);
+    font-weight: 300;
+    line-height: 3rem;
+    color: #757575;
+    text-align: center;
+    opacity: 0;
+}
+/*-------------------------mobile contact text paragraph-------------------------*/
+.contact-text p {
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: var(--medium-font);
+    line-height: 3rem;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+/*-------------------------mobile contact text button-------------------------*/
+.contact-text a {
+    display: block;
+    width: 140px;
+    height: 60px;
+    padding: 18px 0;
+    color: var(--primary-color);
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.button-animation {
+    animation: button-animation 0.45s linear 1 forwards;
+    transition: 1s;
+}
+@keyframes button-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*-------------------------mobile contact animation-------------------------*/
+.contact-animation-space-above {
+    grid-area: animation-specing-above;
+}
+.contact-animation {
+    grid-area: contact-animation;
+    position: relative; 
+}
+/*-------------------------mobile contact animation image-------------------------*/
+ .contact-animation img {
+    position: relative;
+    max-width: 432px;
+    z-index: 2;
+}
+.contact-animation-space-below {
+    grid-area: animation-specing-below;
+}
+/*-------------------------mobile contact shaking hands animation container-------------------------*/
+.shaking-hands-container {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+/*-------------------------mobile contact shaking hands final animation background-------------------------*/
+.shaking-hands {
+    background-image: url("assets/mobile/animation/shaking-hands/shaking-hands.svg");
+    animation: holding-hands 1ms linear 1.06s 1 forwards,
+               shaking-hands 1s linear 1.56s infinite forwards;
+    opacity: 0;
+}
+@keyframes shaking-hands {
+    0%, 100%  {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+@keyframes holding-hands {
+    0% {
+       opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*-------------------------mobile contact shaking hands initial animation background-------------------------*/
+.right-hand {
+    position: absolute;
+    top: 0;
+    background-image: url("assets/mobile/animation/shaking-hands/right-hand.svg");
+    transform: translateX(-425px);
+    animation: right-hand-motion 1s linear 1 forwards,
+               hands-disappearance 1ms linear 1.06s 1 forwards;
+    z-index: 1;
+}
+@keyframes right-hand-motion {
+    0% {
+        transform: translateX(-425px);
+
+    } 100% {
+        transform: translateX(-50px);
+    }
+}
+.left-hand {
+    position: absolute;
+    top: 0;
+    background-image: url("assets/mobile/animation/shaking-hands/left-hand.svg");
+    transform: translateX(425px);
+    animation: left-hand-motion 1s linear 1 forwards,
+               hands-disappearance 1ms linear 1.06s 1 forwards;
+}
+@keyframes left-hand-motion {
+    0% {
+        transform: translateX(425px);
+
+    } 100% {
+        transform: translateX(50px);
+    }
+}
+@keyframes hands-disappearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*-------------------------mobile footer-------------------------*/
+footer {
+    position: relative;
+    top: 60px;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "miliverse-info"
+                         "footer-animation"
+                         "miliverse-find-me";
+    grid-template-rows: 1fr auto 1fr;
+    width: 100%;
+    height: 540px;
+    font-size: 1.6rem;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5);
+    border-bottom: #dddddd solid 1px;
+}
+/*-------------------------mobile footer find me-------------------------*/
+footer div:nth-child(1) {
+    grid-area: miliverse-find-me;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+footer div:nth-child(1) ul{
+    gap: 20px;
+} 
+/*-------------------------mobile footer social icons-------------------------*/
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+}
+footer div:nth-child(1) ul .icon-twitter,
+footer div:nth-child(1) ul .icon-linkedin,
+footer div:nth-child(1) ul .icon-facebook,
+footer div:nth-child(1) ul .icon-instagram,
+footer div:nth-child(1) ul .icon-github {
+    font-size: 28px;
+    color: #6d6d6d;
+}
+footer div:nth-child(1) ul li:hover .icon-twitter,
+footer div:nth-child(1) ul li:hover .icon-linkedin,
+footer div:nth-child(1) ul li:hover .icon-facebook,
+footer div:nth-child(1) ul li:hover .icon-instagram,
+footer div:nth-child(1) ul li:hover .icon-github {
+    color: #999898;
+    cursor: pointer;
+}
+footer div:nth-child(1) p:nth-child(1) {
+    margin-bottom: 28px;
+}
+footer div:nth-child(1) p:nth-child(3) {
+    margin-top: 28px;
+}
+/*-------------------------mobile footer info-------------------------*/
+footer div:nth-child(2) {
+    grid-area: miliverse-info;
+    display: flex;
+    justify-content: center;
+    margin: 40px 8px 0 8px;
+    text-align: center;
+}
+footer div:nth-child(2) p {
+    line-height: 2.5rem;
+}
+footer div:nth-child(2) a:hover {
+    color: #999898;
+    transition: all 200ms ease-in-out;
+}
+/*-------------------------mobile footer info animation-------------------------*/
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+footer figure {
+    grid-area: footer-animation;
+    margin-top: 20px;
+}
+footer img {
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear infinite;
+}

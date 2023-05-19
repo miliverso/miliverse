@@ -4,10 +4,14 @@ const navList = document.querySelector(".navbar-list");
 const lineOne = document.querySelector("#line-1");
 const lineTwo = document.querySelector("#line-2");
 const lineThree = document.querySelector("#line-3");
+const about = document.querySelector(".navbar-list-about");
+const projects = document.querySelector(".navbar-list-projects");
+const contact = document.querySelector(".navbar-list-contact");
 const heroBrightness = document.querySelector(".hero");
 const aboutBrightness = document.querySelector(".about-me");
 const projectsBrightness = document.querySelector(".projects");
 const contactBrightness = document.querySelector(".contact");
+const footerBrightness = document.querySelector("footer");
 const aboutParagraph = document.querySelector(".about-paragraph p");
 const aboutParagraphContainer = document.querySelector(".about-paragraph")
 const makeItHappen = document.querySelector(".make-it-happen");
@@ -25,13 +29,19 @@ const shakingHands = document.querySelector("#shaking-hands");
 const leftHand = document.querySelector("#left-hand");
 const rightHand = document.querySelector("#right-hand")
 
+
 //-------------------------click event-------------------------//
 arrowRight.addEventListener("click", moveRight);
 arrowLeft.addEventListener("click", moveLeft);
 menuButton.addEventListener("click", toggleMobileMenu);
-
-//-------------------------reload website when document has been resized -------------------------//
-// window.onresize = () => location.reload();
+about.addEventListener("click", toggleMobileMenu);
+projects.addEventListener("click", toggleMobileMenu);
+contact.addEventListener("click", toggleMobileMenu);
+heroBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
+aboutBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
+projectsBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
+contactBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
+footerBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
 
 //-------------------------display menu-------------------------//
 function toggleMobileMenu() {
@@ -45,16 +55,26 @@ function toggleMobileMenu() {
     aboutBrightness.classList.toggle("brightness-active");
     projectsBrightness.classList.toggle("brightness-active");
     contactBrightness.classList.toggle("brightness-active");
+    footerBrightness.classList.toggle("brightness-active");   
 }
-
 //-------------------------display make it happen letters and text-------------------------//
 function displayAboutText() {
-    aboutParagraph.classList.add("text-animation")
+    aboutParagraph.classList.add("text-animation");
 }
 function getMakeItHappenLetters() {
     fetch("assets/mobile/animation/make-it-happen/make-it-happen.svg").then(data => data.text()).then(data =>{
         makeItHappen.innerHTML = `${data}`;
     })
+}
+
+function closeMobileMenuWhenClickOutside() {
+    if ( heroBrightness.classList.contains("brightness-active") ||
+    aboutBrightness.classList.contains("brightness-active") ||
+    projectsBrightness.classList.contains("brightness-active") ||
+    contactBrightness.classList.contains("brightness-active")) {
+        toggleMobileMenu();
+    }
+
 }
 //-------------------------creating an observer to display about animation-------------------------//
 function createObserver() {
@@ -105,9 +125,6 @@ function contactTextObserver(entries, observer) {
         }
     })
 }
-
-createObserver()
-
 //-------------------------carousel-------------------------//
 function moveRight() {
     let currentLeft = parseFloat(getComputedStyle(projectsContainer, null).left);
@@ -179,3 +196,7 @@ function showContactAnimation() {
     rightHand.classList.add("right-hand");
    
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    createObserver()  
+})

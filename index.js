@@ -8,7 +8,7 @@ function getMiliverseLogo() {
 document.addEventListener("DOMContentLoaded", function() {
     //-------------------------display enter button after few seconds-------------------------//
     setTimeout(() => {
-        document.querySelector(".logo-animation-button").style.display = "block";
+        document.querySelector(".miliverse-logo-container a").style.opacity = "1";
     }, 3700);
     getMiliverseLogo()
 })

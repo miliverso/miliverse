@@ -79,6 +79,13 @@ button {
 .miliverse-logo-container a {
     position: absolute;
     bottom: 10%;
+    padding: 16px 20px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 0.8px solid var(--primary-color);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 #path01 {
     opacity: 0;
@@ -129,18 +136,6 @@ button {
     } 
 }
 /*-------------------------mobile logo animation-------------------------*/
-.logo-animation-button {
-    display: none;
-    width: 110px;
-    height: 50px;
-    margin-bottom: 5%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    border: 0.8px solid var(--primary-color);
-    background: none;
-    cursor: pointer;
-    animation: opacity 1s linear 1 forwards;
-}
 .logo-animation-button:hover {
     background-color: #85b04450;
 }

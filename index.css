@@ -59,20 +59,22 @@ button {
 .miliverse-logo-container {
     position: absolute;
     top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    min-height: 400px;
+    overflow-y: auto;
 }
 .miliverse-logo {
     position: relative;
-    bottom: 0;
+    top: 40%;
 }
 .miliverse-logo svg {
     width: 100%;
-    height: 800px;
+    height: 350px;
 }
 .miliverse-logo-container a {
     position: absolute;
@@ -141,6 +143,11 @@ button {
 }
 .logo-animation-button:hover {
     background-color: #85b04450;
+}
+@media (max-height: 500px) {
+    .miliverse-logo {
+        top: 20%;
+    }
 }
 @media (min-width: 433px) {
     /*-------------------------tablet background animation-------------------------*/

@@ -270,7 +270,7 @@ path {
 }
 .projects-container li:hover h3::after {
     content: " →";
-    font-size: var(--medium-font);
+    font-size: 1.6rem;
 }
 .projects-container img {
     width: 80vw;
@@ -547,7 +547,7 @@ footer div:nth-child(2) a:hover {
         transform: rotate(360deg);
     }
 }
-footer figure {
+footer div:nth-child(2) div {
     grid-area: footer-animation;
     margin-top: 20px;
 }

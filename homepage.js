@@ -25,6 +25,7 @@ const projectsContainer = document.querySelector(".projects-container");
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 const elements = document.querySelector(".projects-container li")
+const projectsContainerAnchors = document.querySelectorAll(".projects-container li a");
 const shakingHands = document.querySelector("#shaking-hands");
 const leftHand = document.querySelector("#left-hand");
 const rightHand = document.querySelector("#right-hand")
@@ -43,19 +44,46 @@ projectsBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
 contactBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
 footerBrightness.addEventListener("click", closeMobileMenuWhenClickOutside);
 
-//-------------------------display menu-------------------------//
+//-------------------------display mobile menu-------------------------//
 function toggleMobileMenu() {
-    menuIcon.classList.toggle("menu-icon");
-    menuIcon.classList.toggle("menu-active-x");
-    lineOne.classList.toggle("line-1");
-    lineTwo.classList.toggle("line-2");
-    lineThree.classList.toggle("line-3");
-    navList.classList.toggle("navbar-list-active");
-    heroBrightness.classList.toggle("brightness-active")
-    aboutBrightness.classList.toggle("brightness-active");
-    projectsBrightness.classList.toggle("brightness-active");
-    contactBrightness.classList.toggle("brightness-active");
-    footerBrightness.classList.toggle("brightness-active");   
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+        menuIcon.classList.toggle("menu-icon");
+        menuIcon.classList.toggle("menu-active-x");
+        lineOne.classList.toggle("line-1");
+        lineTwo.classList.toggle("line-2");
+        lineThree.classList.toggle("line-3");
+        navList.classList.toggle("navbar-list-active");
+        heroBrightness.classList.toggle("brightness-active")
+        aboutBrightness.classList.toggle("brightness-active");
+        projectsBrightness.classList.toggle("brightness-active");
+        contactBrightness.classList.toggle("brightness-active");
+        footerBrightness.classList.toggle("brightness-active");
+
+        if (navList.classList.contains("navbar-list-active")) {
+            disableElementsWhenMenuIsOpened();
+        } else {
+            enableElementsWhenMenuIsClosed(); 
+        }
+    }
+}
+//-------------------------close mobile menu-------------------------//
+function closeMobileMenuWhenClickOutside() {
+    if (heroBrightness.classList.contains("brightness-active") &&
+    aboutBrightness.classList.contains("brightness-active") &&
+    projectsBrightness.classList.contains("brightness-active") &&
+    contactBrightness.classList.contains("brightness-active")) {
+        toggleMobileMenu();
+        enableElementsWhenMenuIsClosed();
+    }
+}
+
+function disableElementsWhenMenuIsOpened() {
+        projectsContainerAnchors.forEach(anchorElement => anchorElement.classList.add("anchor-disabled"));
+        contactButton.classList.add("anchor-disabled");
+}
+function enableElementsWhenMenuIsClosed() {
+        projectsContainerAnchors.forEach(anchorElement => anchorElement.classList.remove("anchor-disabled"));
+        contactButton.classList.remove("anchor-disabled");
 }
 //-------------------------display make it happen letters and text-------------------------//
 function displayAboutText() {
@@ -65,16 +93,6 @@ function getMakeItHappenLetters() {
     fetch("assets/mobile/animation/make-it-happen/make-it-happen.svg").then(data => data.text()).then(data =>{
         makeItHappen.innerHTML = `${data}`;
     })
-}
-
-function closeMobileMenuWhenClickOutside() {
-    if ( heroBrightness.classList.contains("brightness-active") ||
-    aboutBrightness.classList.contains("brightness-active") ||
-    projectsBrightness.classList.contains("brightness-active") ||
-    contactBrightness.classList.contains("brightness-active")) {
-        toggleMobileMenu();
-    }
-
 }
 //-------------------------creating an observer to display about animation-------------------------//
 function createObserver() {
@@ -182,7 +200,6 @@ function moveLeft() {
         arrowRight.classList.remove("arrow-fade-out")
         arrowRight.disabled = false;
      }
-
 }
 //-------------------------display contact animation and text-------------------------//
 function displayContactText() {
